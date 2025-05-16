@@ -1,2 +1,44 @@
 @import url("/node_modules/bootstrap-icons/font/bootstrap-icons.css");
 @import 'custom';
+
+
+html{
+    position: relative;
+    min-height: 100%;
+}
+
+main{
+    margin-bottom: 250px;
+}
+
+.nav-link{
+    color: $primary;
+}
+
+.nav-link:hover{
+     color: $secondary; 
+}
+
+p{
+font-family: $font-family-serif;
+font-size: 18px;
+color:$primary
+
+}
+
+footer.footer{
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+a:hover{
+    color: $secondary; 
+}
+
