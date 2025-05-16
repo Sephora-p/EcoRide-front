@@ -12035,6 +12035,7 @@ a:hover {
 .hero-scene .hero-scene-content {
   height: 300px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }/*# sourceMappingURL=main.css.map */
