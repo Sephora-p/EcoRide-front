@@ -12015,6 +12015,7 @@ a:hover {
 
 .hero-scene {
   position: relative;
+  margin-bottom: 20px;
 }
 .hero-scene::before {
   content: "";
@@ -12038,4 +12039,14 @@ a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.form-label {
+  color: black;
+}
+
+.allreservations a {
+  display: block;
+  color: #292222;
+  padding: 10px;
 }/*# sourceMappingURL=main.css.map */
