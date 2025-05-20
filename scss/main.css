@@ -12045,8 +12045,6 @@ a:hover {
   color: black;
 }
 
-.allreservations a {
-  display: block;
-  color: #292222;
-  padding: 10px;
+.formulaire {
+  width: 50%;
 }/*# sourceMappingURL=main.css.map */

@@ -37,13 +37,19 @@
             <li class="nav-item">
               <a class="nav-link" href="/covoiturage">Covoiturage</a>
             </li>
-
+            
             <li class="nav-item">
+              <a class="nav-link" href="/contact">Contact</a>
+            </li>
+
+
+            <li class="nav-item" data-show="disconnected">
               <a class="nav-link" href="/signin">Connexion</a>
             </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="/contact">Contact</a>
+           
+            <li class="nav-item" data-show="connected">
+              <button class="nav-link" id="signout-btn" >Déconnexion</button>
             </li>
           </ul>
         </div>
@@ -99,6 +105,7 @@
 
 
     <!---->
+  <script src="js/script.js"></script>
     <script type="module" src="./Router/Router.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     
