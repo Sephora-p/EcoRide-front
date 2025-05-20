@@ -1,0 +1,81 @@
+<section>
+  </div>
+    <div id="messageAucun" class="alert alert-warning d-none">
+      Aucun trajet trouvé. Essayez une autre date : <span id="prochaineDate"></span>
+    </div>
+    
+  </div>
+  <div class="container my-5">
+  <!-- Bouton pour ouvrir/fermer les filtres -->
+  <div class="d-flex justify-content-end mb-3">
+    <button class="btn btn-outline-success" type="button" data-bs-toggle="collapse" data-bs-target="#zoneFiltres" aria-expanded="false" aria-controls="zoneFiltres">
+      Filtres 
+    </button>
+  </div>
+
+  <!-- Zone de filtres déroulante -->
+  <div class="collapse mb-4" id="zoneFiltres">
+    <div class="card card-body">
+      <form id="form-filtres" class="row g-3">
+        <div class="col-md-3">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="filtreEco" name="ecologique">
+            <label class="form-check-label" for="filtreEco">Voyage écologique (voiture électriques)</label>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <label for="prixMax" class="form-label">Prix max (€)</label>
+          <input type="number" id="prixMax" name="prixMax" class="form-control" min="1">
+        </div>
+
+        <div class="col-md-3">
+          <label for="dureeMax" class="form-label">Durée max (min)</label>
+          <input type="number" id="dureeMax" name="dureeMax" class="form-control" min="1">
+        </div>
+
+        <div class="col-md-3">
+          <label for="noteMin" class="form-label">Note min</label>
+          <select id="noteMin" name="noteMin" class="form-select">
+            <option value="">Aucune</option>
+            <option value="3">3 ⭐</option>
+            <option value="4">4 ⭐</option>
+            <option value="4.5">4.5 ⭐</option>
+            <option value="5">5 ⭐</option>
+          </select>
+        </div>
+
+        <div class="col-12 text-end">
+          <button type="submit" class="btn btn-success">Appliquer les filtres</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+    <!-- Carte covoiturage -->
+    <template id="template-trajet">
+  <div class="col-md-6 mb-4">
+    <div class="card shadow-sm p-3 h-100 custom-card">
+      <div class="d-flex align-items-center mb-3">
+        <img src="" class="rounded-circle me-3" alt="photo">
+        <div>
+          <h5 class="mb-0 pseudo">Pseudo</h5>
+          <small class="text-muted note">Note</small>
+        </div>
+      </div>
+      <ul class="list-unstyled mb-3">
+        <li><strong>Nombre de places :</strong> <span class="places"></span></li>
+        <li><strong>Prix :</strong> <span class="prix"></span> €</li>
+        <li><strong>Date :</strong> <span class="date"></span></li>
+        <li><strong>Heure départ :</strong> <span class="depart"></span></li>
+        <li><strong>Heure arrivée :</strong> <span class="arrivee"></span></span></li>
+        <li><strong>Type de voyage :</strong> <span class="eco"></span></li>
+      </ul>
+      <div class="text-center">
+        <a href="#" class="btn btn-outline-success fw-bold lien-detail">Détail</a>
+      </div>
+    </div>
+  </div>
+</template>
+
+</section>

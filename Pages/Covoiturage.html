@@ -8,23 +8,35 @@
 
 <section>
   <div>
-   <h1>Prêt à trouver votre prochain trajet éco-responsable ?</h1>
-   <p> Entrez votre point de départ, votre destination et laissez EcoRide faire le reste. <br> 
-    En quelques secondes, accédez à des trajets partagés, économiques et respectueux de l’environnement. <br>
-    Rejoignez une communauté engagée et roulez vers un avenir plus vert !
-   </p>
- 
-  </div>
-
-  <div>
-    <div class="Recherche">
-      <form action="resultats.html" method="get">
-      <input type="text" name="depart" placeholder="Ville de départ" required>
-      <input type="text" name="arrivee" placeholder="Ville d’arrivée" required>
-      <input type="date" name="date" required>
-      <button type="submit">Rechercher</button> 
+    <div class="text-center">
+      <h1>Prêt à trouver votre prochain trajet éco-responsable ?</h1>
+      <p> Entrez votre point de départ, votre destination et laissez EcoRide faire le reste. <br> 
+        En quelques secondes, accédez à des trajets partagés, économiques et respectueux de l’environnement. <br>
+        Rejoignez une communauté engagée et roulez vers un avenir plus vert !
+      </p>
+  
     </div>
   </div>
- 
-</section>
 
+ <!--Recherche d'un trajet-->
+  <form action="resultats" method="GET" class="row justify-content-center gy-3">
+    
+    <div class="col-md-3">
+      <input type="text" class="form-control custom-input" placeholder="Adresse de départ" name="depart" required>
+    </div>
+
+    <div class="col-md-3">
+      <input type="text" class="form-control custom-input" placeholder="Adresse d’arrivée" name="arrivee" required>
+    </div>
+
+    <div class="col-md-3">
+      <input type="date" class="form-control custom-input" name="date" required>
+    </div>
+
+    <div class="col-md-3">
+      <button type="submit" class="btn w-100 custom-btn">Rechercher</button>
+    </div>
+
+  </form>
+</div>
+</section>

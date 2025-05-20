@@ -18,6 +18,9 @@ main{
 .nav-link:hover{
      color: $secondary; 
 }
+h2{
+    color: $primary;
+}
 
 p{
 font-family: $font-family-serif;
@@ -79,3 +82,24 @@ a:hover{
 .formulaire{
 width: 50%;
 }
+
+.form-control.custom-input {
+    border: 2px solid $dark;
+    font-size: 1.1rem;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  .btn.custom-btn {
+    border: 2px solid $dark;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: transparent;
+    color: $primary
+  }
+
+  .btn.custom-btn:hover {
+    background-color: $dark;
+    color: $secondary;
+  }
