@@ -19,24 +19,25 @@
   </div>
 
  <!--Recherche d'un trajet-->
-  <form action="resultats" method="GET" class="row justify-content-center gy-3">
+  <form class="row g-3 justify-content-center mt-4"  action="/resultats" method="GET">
     
-    <div class="col-md-3">
+    <div class="col-10 col-sm-8 col-md-3">
       <input type="text" class="form-control custom-input" placeholder="Adresse de départ" name="depart" required>
     </div>
 
-    <div class="col-md-3">
+    <div class="col-10 col-sm-8 col-md-3">
       <input type="text" class="form-control custom-input" placeholder="Adresse d’arrivée" name="arrivee" required>
-    </div>
+    </div> 
 
-    <div class="col-md-3">
+    <div class="col-10 col-sm-8 col-md-3">
       <input type="date" class="form-control custom-input" name="date" required>
     </div>
-
-    <div class="col-md-3">
-      <button type="submit" class="btn w-100 custom-btn">Rechercher</button>
+    
+    <div class="col-md-12 text-center mt-5">
+      <button type="submit" class="btn custom-btn w-50 w-md-30">Rechercher</button>
     </div>
-
   </form>
+
+  
 </div>
 </section>

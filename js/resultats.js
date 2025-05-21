@@ -6,7 +6,7 @@ const trajets = [
       note: 4.8,
       places: 2,
       prix: 10,
-      date: "2025-06-20",
+      date: "20-06-2025",
       heureDepart: "08:00",
       heureArrivee: "09:30",
       duree: 90,
