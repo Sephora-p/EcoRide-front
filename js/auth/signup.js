@@ -1,25 +1,22 @@
-const inputNom = document.getElementById("NomInput");
-const inputPrenom = document.getElementById("PrenomInput");
+const inputPseudo= document.getElementById("PseudoInput");
 const inputMail = document.getElementById("EmailInput");
 const inputPassword = document.getElementById("PasswordInput");
 const inputValidatePassword = document.getElementById("ValidatePasswordInput");
 const btnValidation = document.getElementById("btn-validation-inscription");
 
-inputNom.addEventListener("keyup",validateForm);
-inputPrenom.addEventListener("keyup",validateForm);
+inputPseudo.addEventListener("keyup",validateForm);
 inputMail.addEventListener("keyup",validateForm);
 inputPassword.addEventListener("keyup",validateForm);
-inputValidationPassword.addEventListener("keyup",validateForm);
+inputValidatePassword.addEventListener("keyup",validateForm);
 
 //Validation des champs du formulaire//
 function validateForm(){
-    const nomOk = validateRequired(inputNom);
-    const prenomOk = validateRequired(inputPrenom);
+    const pseudoOK = validateRequired(inputPseudo);
     const mailOk = validateMail(inputMail);
     const passwordOk = validatePassword(inputPassword);
-    const passwordConfirmOK = validateConfirmationPassword(inputPassword,inputValidationPassword);
+    const passwordConfirmOK = validateConfirmationPassword(inputPassword,inputValidatePassword);
 
-    if(nomOk && prenomOk && mailOk && passwordOk && passwordConfirmOK){
+    if(pseudoOK && mailOk && passwordOk && passwordConfirmOK){
         btnValidation.disabled = false;
     }
     else{
