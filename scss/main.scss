@@ -19,14 +19,31 @@ main{
     color: $secondary; 
 }
 
+.navbar-brand{
+    height: 110px;
+    width: 150px;
+    margin-left: 50px;
+}
+
+
+
+h1{
+ font-family: $font-family-sans-serif;
+    font-size: 38px;
+    
+}
+
+
 h2{
-   color: $primary;
+   font-family: $font-family-serif;
+    font-size: 18px;
+    color:$primary;
 }
 
 p{
-font-family: $font-family-serif;
-font-size: 18px;
-color:$primary;
+    font-family: $font-family-serif;
+    font-size: 18px;
+    color:$primary;
 
 }
 
